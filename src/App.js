@@ -68,8 +68,9 @@ class App extends React.Component{
         return(
         <>
             <div className="row mx-0 text-center">
+
                 <div className="col-sm-12 col-md-6 col-lg-4 mx-auto" style={{display : "grid"}}>
-                <Text text={this.state.count} />
+                <Text text={this.state.count} title="Kitchen TV" />
                 <p style={{display: "flex"}}>                    
                     <Button stylesheetClass={["btn-success","w-50"]} name="+" clickAct={this.incrementCountF}/>
                     <Button stylesheetClass={["btn-danger","w-50"]} name="-" clickAct={this.decrementCountF} />
@@ -78,7 +79,7 @@ class App extends React.Component{
             </div>
             <div className="row mx-0 text-center">
                 <div className="col-sm-12 col-md-6 col-lg-4 mx-auto" style={{display : "grid"}}>
-                <Text text={this.state.secondCount} />
+                <Text text={this.state.secondCount}  title="Living room TV" />
                 <p style={{display: "flex"}}>
                     <Button stylesheetClass={["btn-success","w-50"]} name="+" clickAct={this.incrementCountS}/>
                     <Button stylesheetClass={["btn-danger","w-50"]} name="-" clickAct={this.decrementCountS} />

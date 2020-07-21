@@ -4,7 +4,7 @@ class Button extends Component{
 
     render(){  
         
-        const className = ["btn"];               
+        const className = ["btn","p-1"];               
         const remoteClass = this.props.stylesheetClass;
         if ( remoteClass.length > 0 ){
                 remoteClass.forEach(this_class => {
@@ -20,7 +20,7 @@ class Button extends Component{
         }
 //                   
         return(
-            <button type="button" className={className.join(" ")} onClick={this.props.clickAct} >{button_name}</button>       
+            <button type="button" className={className.join(" ")} onClick={this.props.clickAct}  style={{fontSize: "0.3rem"}}>{button_name}</button>       
         );
     }
 
